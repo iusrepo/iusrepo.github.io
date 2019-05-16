@@ -1,1 +1,4 @@
 theme: jekyll-theme-minimal
+title: IUS
+description: Inline with Upstream Stable
+logo: ius_dark.svg
