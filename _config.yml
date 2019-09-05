@@ -1,2 +1,4 @@
 title: IUS
 description: IUS is a yum repository that provides newer versions of select software for RHEL and CentOS.
+kramdown:
+  smart_quotes: ['apos', 'apos', 'quot', 'quot']
