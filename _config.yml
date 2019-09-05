@@ -1,4 +1,2 @@
-theme: jekyll-theme-cayman
 title: IUS
-description: Inline with Upstream Stable
-logo: ius_dark.svg
+description: IUS is a yum repository that provides newer versions of select software for RHEL and CentOS.
