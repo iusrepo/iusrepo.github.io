@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        {% include head.html %}
+    </head>
+
+    <body>
+
+        <header>
+            {% include header.html %}
+        </header>
+
+        <main>
+
+            <section class="section">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-12-tablet is-10-desktop is-8-widescreen">
+                            <div class="content">
+                                {{ content }}
+                            </div> <!-- content -->
+                        </div> <!-- column -->
+                    </div> <!-- columns -->
+                </div> <!-- container -->
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            {% include footer.html %}
+        </footer>
+
+    </body>
+
+</html>
