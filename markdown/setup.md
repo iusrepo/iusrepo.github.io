@@ -26,4 +26,16 @@ https://repo.ius.io/ius-release-el7.rpm \
 https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 ```
 
+### Testing
+
+IUS packages are first made available in the ius-testing repository before
+being promoted to the main repository.  When you install ius-release, the
+ius-testing repository is disabled by default.  Enable it if you would like to
+participate in testing new IUS packages.
+
+```
+yum install yum-utils
+yum-config-manager --enable ius-testing
+```
+
 [epel]: https://fedoraproject.org/wiki/EPEL
