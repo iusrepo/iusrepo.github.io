@@ -78,7 +78,7 @@ to describe packages with the following properties.
 * Files from the package must use different names than files from stock
   packages to avoid file conflicts.
 * Must not [provide][provides] the stock package name.
-* Must not [Conflict][conflicts] with the stock package.
+* Must not [conflict][conflicts] with the stock package.
 * Must not [obsolete][obsoletes] any stock packages.
 
 The [EPEL][epel] repository also contains parallel installable packages.  These
