@@ -1,30 +1,29 @@
 ---
-title: IUS - Sponsors
-permalink: /sponsors
+title: IUS - Thanks
+permalink: /thanks
 ---
 
-# Sponsors
+# Thanks
 
-IUS is made possible by our sponsors.
+The IUS project would like to thank the following businesses and projects.
 
 <br><br>
 ![Rackspace](/images/rackspace.svg){:width="200px"}
 
-[Rackspace][rackspace] is our primary sponsor.  We utilize [Rackspace Cloud
+[Rackspace][rackspace] sponsors the IUS project.  We utilize [Rackspace Cloud
 Servers][servers], [Rackspace CDN][cdn], and [Rackspace Cloud Files][files].
 
 <br><br>
 ![Fedora](/images/fedora.svg){:width="160px"}
 
-[Fedora][fedora] doesn't directly sponsor us, but most of our spec files are
-based on Fedora spec files.  Our infrastructure also runs [Fedora
-Server][fedora-server].
+Most IUS spec files are based on [Fedora][fedora] spec files.  IUS
+infrastructure servers run [Fedora Server][fedora-server].
 
 <br><br>
 ![GitHub](/images/github.svg){:width="120px"}
 
-[GitHub][github] doesn't directly sponsor us, but we host our [package
-sources][spec] on GitHub.  This site is also hosted on [GitHub Pages][pages].
+IUS [package sources][specs] are hosted on [GitHub][github].  This site is also
+hosted on [GitHub Pages][pages].
 
 <br><br>
 ![Prospect One](/images/prospectone.png){:width="200px"}
@@ -51,4 +50,4 @@ order logo stickers.
 [fedora]: https://getfedora.org
 [fedora-server]: https://getfedora.org/en/server/
 [github]: https://github.com
-[spec]: https://github.com/search?q=org%3Aiusrepo+topic%3Arpm
+[specs]: https://github.com/search?q=org%3Aiusrepo+topic%3Arpm
