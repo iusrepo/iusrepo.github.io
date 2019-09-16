@@ -32,7 +32,7 @@ hosted on [GitHub Pages][pages].
 the project.
 
 <br><br>
-![Sticker Mule](/images/stickermule.svg){:width="240px"}
+![Sticker Mule](/images/stickermule.svg){:width="160px"}
 
 [Sticker Mule][stickermule] donated store credit to IUS so we were able to
 order logo stickers.
