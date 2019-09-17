@@ -8,31 +8,31 @@ permalink: /thanks
 The IUS project would like to thank the following businesses and projects.
 
 <br><br>
-![Rackspace](/images/rackspace.svg){:width="200px"}
+![Rackspace](/images/rackspace.svg){: width="200px" id="rackspace" }
 
 [Rackspace][rackspace] sponsors the IUS project.  We utilize [Rackspace Cloud
 Servers][servers], [Rackspace CDN][cdn], and [Rackspace Cloud Files][files].
 
 <br><br>
-![Fedora](/images/fedora.svg){:width="160px"}
+![Fedora](/images/fedora.svg){: width="160px" id="fedora" }
 
 Most IUS spec files are based on [Fedora][fedora] spec files.  IUS
 infrastructure servers run [Fedora Server][fedora-server].
 
 <br><br>
-![GitHub](/images/github.svg){:width="120px"}
+![GitHub](/images/github.svg){: width="120px" id="github" }
 
 IUS [package sources][specs] are hosted on [GitHub][github].  This site is also
 hosted on [GitHub Pages][pages].
 
 <br><br>
-![Prospect One](/images/prospectone.png){:width="200px"}
+![Prospect One](/images/prospectone.png){: width="200px" id="prospectone" }
 
 [Prospect One][prospectone] designed our [current logo][logo] and donated it to
 the project.
 
 <br><br>
-![Sticker Mule](/images/stickermule.svg){:width="160px"}
+![Sticker Mule](/images/stickermule.svg){: width="160px" id="stickermule" }
 
 [Sticker Mule][stickermule] donated store credit to IUS so we were able to
 order logo stickers.
