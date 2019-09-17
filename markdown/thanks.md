@@ -26,6 +26,11 @@ IUS [package sources][specs] are hosted on [GitHub][github].  This site is also
 hosted on [GitHub Pages][pages].
 
 <br><br>
+![Cirrus CI](/images/cirrus.svg){: width="220px" id="cirrus" }
+
+IUS packages are built with [Cirrus CI][cirrus].
+
+<br><br>
 ![Prospect One](/images/prospectone.png){: width="200px" id="prospectone" }
 
 [Prospect One][prospectone] designed our [current logo][logo] and donated it to
@@ -51,3 +56,4 @@ order logo stickers.
 [fedora-server]: https://getfedora.org/en/server/
 [github]: https://github.com
 [specs]: https://github.com/search?q=org%3Aiusrepo+topic%3Arpm
+[cirrus]: https://cirrus-ci.org

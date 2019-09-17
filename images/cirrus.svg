@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 814 210" style="enable-background:new 0 0 814 210;" xml:space="preserve">
+<style type="text/css">
+	.st0{stroke:#212121;stroke-width:13.5;stroke-linecap:round;}
+	.st1{fill:none;stroke:#212121;stroke-width:13.5;stroke-linecap:round;}
+	.st2{fill:#212121;}
+	.st3{font-family:'Helvetica';}
+	.st4{font-size:126.7641px;}
+</style>
+<title>cirrus-logo</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="cirrus-logo" transform="translate(7.000000, 7.000000)">
+		<path id="Shape" class="st0" d="M61,156.5h111"/>
+		<path id="Shape_1_" class="st1" d="M172,156.5c11.6,0,21-9.4,21-21.1s-9.4-21.1-21-21.1"/>
+		<path id="Shape_2_" class="st0" d="M61,114.3h111"/>
+		<path id="Shape_3_" class="st1" d="M172,114.3c11.6,0,21-9.4,21-21.1s-9.4-21.1-21-21.1"/>
+		<path id="Shape_4_" class="st0" d="M61,72.2h111"/>
+		<path id="Shape_5_" class="st1" d="M172,72.2c11.6,0,21-9.4,21-21.1S183.6,30,172,30"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 260 163.4941)" class="st2 st3 st4">Cirrus CI</text>
+</svg>
