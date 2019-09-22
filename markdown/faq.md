@@ -75,6 +75,18 @@ With this change, and Red Hat moving past SCL to [modularity][modularity],
 suffixing our packages will likely never be necessary again.  In 2018 we
 started created new packages without the "u" suffix.
 
+### How long do updates have to wait in the testing repository before being promoted to the main repository?
+
+Updates for our existing packages are first released in the [testing
+repository][testing].  If no issues are reported after one week, the updated
+packages will be promoted to the main repository.  We reserve the right to
+promote package sooner if necessary.
+
+This release policy does not not apply to new packages that have yet to be
+added to the main repository.  When a new package is requested, the requester
+must agree to test the package.  Once the requester confirms that everything
+works as expected, the package is eligible to be added to the main repository.
+
 ### Why doesn't IUS have packages for RHEL 8?
 
 RHEL 8 introduced [Application Streams][appstream] (also know as
@@ -82,6 +94,57 @@ RHEL 8 introduced [Application Streams][appstream] (also know as
 versions of software.  [EPEL][epel] plans to give package maintainers the
 ability to offer additional streams that Red Hat doesn't offer.  If this goes
 according to plan, IUS simply won't be necessary in RHEL 8 going forward.
+
+### Why does yum fail with conflict errors when installing a non-IUS package?
+
+This can happen if the package you want to install has dependencies that could
+be satisfied by multiple IUS packages.  Yum's dependency resolution is not
+always smart enough to pull in all the correct dependencies.  You can work
+around this by explicitly requesting a few more package names to help the
+transaction resolve successfully.
+
+Alternatively, you can install [DNF][dnf], which has more sophisticated
+dependency resolution capabilities and can determine the right thing to do.
+
+### Why does composer fail to install with IUS enabled?
+
+This is explained [above][yum].  You can explicitly request these package names
+to help yum resolve the transaction.
+
+- `yum install composer php72u-{cli,common,gd,intl,mbstring,pdo,process}`
+- `yum install composer php73-{cli,common,gd,intl,mbstring,pdo,process}`
+
+Alternatively, you can use [DNF][dnf].  If you already have some PHP packages
+installed, it will resolve matching ones.  If you don't have any PHP packages
+installed yet, it will resolve to the latest ones available to satisfy
+composer's dependencies.  If you ask for any specific PHP package in your yum
+command, DNF will resolve the rest of the dependencies to match.
+
+- `dnf install composer`
+- `dnf install composer php72u-common`
+- `dnf install composer php73-common`
+
+### I don't see php73 in the repos, where is it?
+
+Traditionally in Red Hat and Fedora PHP packages, the php package contains the
+PHP module for the Apache HTTPD Server, commonly known as mod\_php.  The PHP
+language is packaged as php-common.  This naming is confusing, but Fedora has
+[declined to change it][mod-php-rename].
+
+IUS decided to fix this in our PHP packages to reduce user confusion.  We move
+the mod\_php files into a subpackage such as mod\_php73.  When you want to use
+our PHP packages, you must explicitly choose the PHP SAPI (server API) you
+want, such as mod\_php73 or php73-fpm.
+
+### Why can't I install mod\_php71u with httpd24u?
+
+mod\_php compiles against the MMN (magic module number) of httpd.  This means
+that if you build mod\_php against httpd 2.2, it can only install with httpd
+2.2.  When we created httpd24u, [we decided to continue building our mod\_php
+packages against stock httpd][mod-php-decision].  Building mod\_php for every
+combination of php and httpd was far more complexity than we were willing to
+maintain.  If you would like to use php71u with httpd24u, you must use
+php71u-fpm.
 
 [epel]: https://fedoraproject.org/wiki/EPEL
 [wishlist]: https://github.com/iusrepo/wishlist
@@ -92,4 +155,9 @@ according to plan, IUS simply won't be necessary in RHEL 8 going forward.
 [backporting]: https://access.redhat.com/security/updates/backporting
 [announce]: https://github.com/iusrepo/announce
 [modularity]: https://docs.fedoraproject.org/en-US/modularity/
+[testing]: /setup#testing
 [appstream]: https://developers.redhat.com/blog/2018/11/15/rhel8-introducing-appstreams/
+[dnf]: /usage#dnf
+[yum]: #why-does-yum-fail-with-conflict-errors-when-installing-a-non-ius-package
+[mod-php-rename]: https://bugzilla.redhat.com/show_bug.cgi?id=1290267
+[mod-php-decision]: https://lists.launchpad.net/ius-community/msg01277.html
