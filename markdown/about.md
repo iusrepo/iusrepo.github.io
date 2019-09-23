@@ -85,7 +85,7 @@ package requests were initially tracked on [Launchpad][launchpad], but in 2013
 we switched to [GitHub][github].  Package builds were handled on a private
 Rackspace build farm until 2019, when we switched to [Cirrus CI][cirrus].  For
 many years we relied on a network of mirrors to distribute our content, but in
-2019 we switched to a [Rackspace CDN][cdn].
+2019 we switched to using the [Rackspace CDN][cdn].
 
 [rackspace]: https://www.rackspace.com
 [backports]: https://access.redhat.com/security/updates/backporting

@@ -146,6 +146,22 @@ combination of php and httpd was far more complexity than we were willing to
 maintain.  If you would like to use php71u with httpd24u, you must use
 php71u-fpm.
 
+### Can I become an IUS mirror?
+
+For many years we relied on a network of mirrors to distribute our content.
+Organizations would volunteer to mirror our content, and we would direct our
+users to them via our mirrorlist API.  We referred to these as public mirrors.
+Some organizations only wanted to mirror our content for their own use and not
+serve it as part of the mirror network.  We referred to these as private
+mirrors.
+
+In 2019 we switched to using the [Rackspace CDN][cdn].  This means we no longer
+need public mirrors.  If you would still like to mirror our content for your
+own needs (private mirror), email us at [dev@ius.io](mailto:dev@ius.io) and we
+will send you the rsync information so you can bypass the CDN and sync straight
+from the source.
+
+
 [epel]: https://fedoraproject.org/wiki/EPEL
 [wishlist]: https://github.com/iusrepo/wishlist
 [scl]: https://www.softwarecollections.org/en/
@@ -161,3 +177,4 @@ php71u-fpm.
 [yum]: #why-does-yum-fail-with-conflict-errors-when-installing-a-non-ius-package
 [mod-php-rename]: https://bugzilla.redhat.com/show_bug.cgi?id=1290267
 [mod-php-decision]: https://lists.launchpad.net/ius-community/msg01277.html
+[cdn]: https://www.rackspace.com/en-us/cloud/cdn-content-delivery-network
