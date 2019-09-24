@@ -55,5 +55,5 @@ order logo stickers.
 [fedora]: https://getfedora.org
 [fedora-server]: https://getfedora.org/en/server/
 [github]: https://github.com
-[specs]: https://github.com/search?q=org%3Aiusrepo+topic%3Arpm
+[specs]: https://github.com/search?q=org%3Aiusrepo+topic%3Arpm&s=updated
 [cirrus]: https://cirrus-ci.org

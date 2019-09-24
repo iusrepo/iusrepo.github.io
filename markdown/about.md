@@ -91,7 +91,7 @@ many years we relied on a network of mirrors to distribute our content, but in
 [backports]: https://access.redhat.com/security/updates/backporting
 [semver]: https://semver.org
 [setup]: /setup
-[issues]: https://github.com/search?q=org%3Aiusrepo+topic%3Arpm
+[issues]: https://github.com/search?q=org%3Aiusrepo+topic%3Arpm&s=updated
 [launchpad]: https://launchpad.net/ius
 [github]: https://github.com/iusrepo
 [cirrus]: https://cirrus-ci.com/github/iusrepo
