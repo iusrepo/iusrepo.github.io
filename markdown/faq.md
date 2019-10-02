@@ -146,6 +146,16 @@ combination of php and httpd was far more complexity than we were willing to
 maintain.  If you would like to use php71u with httpd24u, you must use
 php71u-fpm.
 
+### How can I report an issue with an IUS package?
+
+If you think you've discovered a problem with an IUS package, please let us
+know.  Locate the appropriate [package source][package-sources]  GitHub
+repository and open an issue.  If you are familiar with RPM packaging and know
+what the fix is, you can send a pull requests.  If the problem is with the
+software and not the packaging, we can usually assist in reporting it upstream.
+We also like to determine if Fedora is affected as well, and coordinate the fix
+there as well.
+
 ### Can I become an IUS mirror?
 
 For many years we relied on a network of mirrors to distribute our content.
@@ -177,4 +187,5 @@ from the source.
 [yum]: #why-does-yum-fail-with-conflict-errors-when-installing-a-non-ius-package
 [mod-php-rename]: https://bugzilla.redhat.com/show_bug.cgi?id=1290267
 [mod-php-decision]: https://lists.launchpad.net/ius-community/msg01277.html
+[package-sources]: https://github.com/search?q=org%3Aiusrepo+topic%3Arpm&s=updated
 [cdn]: https://www.rackspace.com/en-us/cloud/cdn-content-delivery-network
