@@ -7,11 +7,12 @@ permalink: /about
 
 IUS is a yum repository that provides newer versions of select software for
 RHEL and CentOS.  It started as an internal experiment at
-[Rackspace][rackspace] before being transitioned into a community project.  The
-packages we offer enable our users to combine a stable base operating system
-with a faster moving application stack.  Our packages are designed to be used
-on an individual opt-in basis, so the repository can be enabled and not
-override other unrelated packages on your system.
+[Rackspace][rackspace] before being transitioned into a community project
+(non-SLA, see [FAQ][sla]).  The packages we offer enable our users to combine a
+stable base operating system with a faster moving application stack.  Our
+packages are designed to be used on an individual opt-in basis, so the
+repository can be enabled and not override other unrelated packages on your
+system.
 
 ### Stability Versus Features
 
@@ -88,6 +89,7 @@ many years we relied on a network of mirrors to distribute our content, but in
 2019 we switched to using the [Rackspace CDN][cdn].
 
 [rackspace]: https://www.rackspace.com
+[sla]: /faq#is-ius-a-rackspace-service-or-product
 [backports]: https://access.redhat.com/security/updates/backporting
 [semver]: https://semver.org
 [setup]: /setup
