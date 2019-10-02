@@ -156,6 +156,11 @@ software and not the packaging, we can usually assist in reporting it upstream.
 We also like to determine if Fedora is affected as well, and coordinate the fix
 there as well.
 
+If the issue affects multiple packages, you may consider reporting it against
+our [packaging][packaging] meta repository.  We also have an
+[infrastructure][infrastructure] meta repository for reporting infrastructure
+issues.
+
 ### Can I become an IUS mirror?
 
 For many years we relied on a network of mirrors to distribute our content.
@@ -188,4 +193,6 @@ from the source.
 [mod-php-rename]: https://bugzilla.redhat.com/show_bug.cgi?id=1290267
 [mod-php-decision]: https://lists.launchpad.net/ius-community/msg01277.html
 [package-sources]: https://github.com/search?q=org%3Aiusrepo+topic%3Arpm&s=updated
+[packaging]: https://github.com/iusrepo/packaging
+[infrastructure]: https://github.com/iusrepo/infrastructure
 [cdn]: https://www.rackspace.com/en-us/cloud/cdn-content-delivery-network
