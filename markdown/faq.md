@@ -161,6 +161,15 @@ our [packaging][packaging] meta repository.  We also have an
 [infrastructure][infrastructure] meta repository for reporting infrastructure
 issues.
 
+### Why am I getting a GPG key error when I attempt to update my IUS package?
+
+In 2019 the IUS project switched to new package signing keys.  These are listed
+(along with our legacy key) [here][keys].  Make sure your ius-release package
+is updated to at least version 2, then check in `/etc/yum.repos.d/` for any
+`*.rpmnew` files that need to be merged.  Then go subscribe to our
+[announce][announce] repository on GitHub to be notified of changes like this
+in the future.
+
 ### Can I become an IUS mirror?
 
 For many years we relied on a network of mirrors to distribute our content.
@@ -195,4 +204,5 @@ from the source.
 [package-sources]: https://github.com/search?q=org%3Aiusrepo+topic%3Arpm&s=updated
 [packaging]: https://github.com/iusrepo/packaging
 [infrastructure]: https://github.com/iusrepo/infrastructure
+[keys]: /keys
 [cdn]: https://www.rackspace.com/en-us/cloud/cdn-content-delivery-network
