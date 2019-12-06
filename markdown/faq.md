@@ -95,6 +95,16 @@ versions of software.  [EPEL][epel] plans to give package maintainers the
 ability to offer additional streams that Red Hat doesn't offer.  If this goes
 according to plan, IUS simply won't be necessary in RHEL 8 going forward.
 
+### Why am I getting errors about missing packages when using IUS on UBI?
+
+[UBI][ubi] is container base image that only has access to a subset of RHEL
+packages.  IUS is built for RHEL and CentOS.  While some IUS packages may
+install with UBI, others will fail to install due to missing dependencies.  If
+you would like to install IUS packages in a container, you will probably be
+better off using RHEL or CentOS base images.  UBI package requests can be
+submitted through Red Hat support cases (customers) or [bugzilla][ubi-request]
+(non-customers).
+
 ### Why does yum fail with conflict errors when installing a non-IUS package?
 
 This can happen if the package you want to install has dependencies that could
@@ -197,6 +207,8 @@ from the source.
 [modularity]: https://docs.fedoraproject.org/en-US/modularity/
 [testing]: /setup#testing
 [appstream]: https://developers.redhat.com/blog/2018/11/15/rhel8-introducing-appstreams/
+[ubi]: https://developers.redhat.com/products/rhel/ubi/
+[ubi-request]: https://developers.redhat.com/articles/ubi-faq/#support__lifecycle__and_updating
 [dnf]: /usage#dnf
 [yum]: #why-does-yum-fail-with-conflict-errors-when-installing-a-non-ius-package
 [mod-php-rename]: https://bugzilla.redhat.com/show_bug.cgi?id=1290267
