@@ -105,6 +105,13 @@ better off using RHEL or CentOS base images.  UBI package requests can be
 submitted through Red Hat support cases (customers) or [bugzilla][ubi-request]
 (non-customers).
 
+### Is IUS compatible with Amazon Linux?
+
+No.  IUS packages are built to be compatible with RHEL and CentOS.  Amazon
+Linux is loosely based on RHEL, but diverges significantly and cannot truly be
+considered a RHEL clone.  Other third party repositories such as EPEL face this
+issue as well.
+
 ### Why does yum fail with conflict errors when installing a non-IUS package?
 
 This can happen if the package you want to install has dependencies that could
