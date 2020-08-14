@@ -130,6 +130,7 @@ to help yum resolve the transaction.
 
 - `yum install composer php72u-{cli,common,gd,intl,mbstring,pdo,process}`
 - `yum install composer php73-{cli,common,gd,intl,mbstring,pdo,process}`
+- `yum install composer php74-{cli,common,gd,intl,mbstring,pdo,process,pecl-zip}`
 
 Alternatively, you can use [DNF][dnf].  If you already have some PHP packages
 installed, it will resolve matching ones.  If you don't have any PHP packages
