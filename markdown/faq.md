@@ -139,9 +139,10 @@ installed yet, it will resolve to the latest ones available to satisfy
 composer's dependencies.  If you ask for any specific PHP package in your yum
 command, DNF will resolve the rest of the dependencies to match.
 
-- `dnf install composer`
+- `dnf install composer` (with any other php package already installed)
 - `dnf install composer php72u-common`
 - `dnf install composer php73-common`
+- `dnf install composer php74-common`
 
 ### I don't see php73 in the repos, where is it?
 
