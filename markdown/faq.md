@@ -118,7 +118,8 @@ This can happen if the package you want to install has dependencies that could
 be satisfied by multiple IUS packages.  Yum's dependency resolution is not
 always smart enough to pull in all the correct dependencies.  You can work
 around this by explicitly requesting a few more package names to help the
-transaction resolve successfully.
+transaction resolve successfully.  `yum deplist <package>` shows dependencies
+including alternatives.
 
 Alternatively, you can install [DNF][dnf], which has more sophisticated
 dependency resolution capabilities and can determine the right thing to do.
@@ -130,6 +131,7 @@ to help yum resolve the transaction.
 
 - `yum install composer php72u-{cli,common,gd,intl,mbstring,pdo,process}`
 - `yum install composer php73-{cli,common,gd,intl,mbstring,pdo,process}`
+- `yum install composer php74-{gd,mbstring,pdo,process,pecl-zip}`
 
 Alternatively, you can use [DNF][dnf].  If you already have some PHP packages
 installed, it will resolve matching ones.  If you don't have any PHP packages
