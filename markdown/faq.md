@@ -201,9 +201,13 @@ mirrors.
 
 In 2019 we switched to using the [Rackspace CDN][cdn].  This means we no longer
 need public mirrors.  If you would still like to mirror our content for your
-own needs (private mirror), email us at [dev@ius.io](mailto:dev@ius.io) and we
-will send you the rsync information so you can bypass the CDN and sync straight
-from the source.
+own needs (private mirror), you can use the following endpoints to bypass the
+CDN and sync straight from the source.  Do not use these endpoints to directly
+consume IUS packages.
+
+- http: `http://origin.repo.ius.io`
+- https: `https://origin.repo.ius.io`
+- rsync: `rsync://origin.repo.ius.io/ius`
 
 
 [epel]: https://fedoraproject.org/wiki/EPEL
