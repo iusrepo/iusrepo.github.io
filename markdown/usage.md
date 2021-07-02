@@ -90,6 +90,6 @@ consideration needed is that commands and file paths will be different.
 [conflicts]: https://rpm.org/user_doc/dependencies.html#conflicts
 [yum-shell]: https://linux.die.net/man/8/yum-shell
 [dnf]: https://dnf.readthedocs.io
-[yum4]: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/7.6_release_notes/technology_previews_system_and_subscription_management
+[yum4]: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/7.9_release_notes/technology_previews#technology-preview_system-and-subscription-management
 [allowerasing]: https://dnf.readthedocs.io/en/latest/cli_vs_yum.html#packages-replacement-without-yum-swap
 [epel]: https://fedoraproject.org/wiki/EPEL
