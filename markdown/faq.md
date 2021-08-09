@@ -232,3 +232,10 @@ consume IUS packages.
 [infrastructure]: https://github.com/iusrepo/infrastructure
 [keys]: /keys
 [cdn]: https://www.rackspace.com/en-us/cloud/cdn-content-delivery-network
+
+### Where can I find packages for RHEL 6 and older versions?
+
+RHEL 6 has reached end of life and is no longer receiving security patches.
+The IUS packages for RHEL 6 and older are not maintained or supported and
+should not be used. For historical purposes, these packages are available at
+https://vault.ius.io/.
