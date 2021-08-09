@@ -195,7 +195,7 @@ in the future.
 RHEL 6 has reached end of life and is no longer receiving security patches.
 The IUS packages for RHEL 6 and older are not maintained and should not be
 used. For historical purposes, these packages are available at
-https://vault.ius.io/.
+[vault.ius.io][vault].
 
 ### Can I become an IUS mirror?
 
@@ -238,4 +238,5 @@ consume IUS packages.
 [packaging]: https://github.com/iusrepo/packaging
 [infrastructure]: https://github.com/iusrepo/infrastructure
 [keys]: /keys
+[vault]: https://vault.ius.io
 [cdn]: https://www.rackspace.com/en-us/cloud/cdn-content-delivery-network
